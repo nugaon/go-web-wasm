@@ -1,0 +1,19 @@
+{
+  "name": "go-web-wasm",
+  "version": "1.0.0",
+  "description": "Boilerplate for go-based wasm projects for browser usage.",
+  "scripts": {
+    "serve": "http-server $INIT_CWD/web",
+    "build:wasm": "cross-env GOOS=js GOARCH=wasm go build -o $INIT_CWD/web/main.wasm"
+  },
+  "keywords": [
+    "frontend",
+    "webassembly"
+  ],
+  "author": "Viktor Levente Tóth @nugaon",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "http-server": "^14.0.0"
+  }
+}
